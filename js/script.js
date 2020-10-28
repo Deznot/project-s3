@@ -55,12 +55,6 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 
 
-
-
-
-
-
-
     // Timer
     
     const deadline = '2020-11-03';
@@ -116,9 +110,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 
     setClock('.timer',deadline);
 
-   
-
-//modal
+// modal
 
 let modalTrigger = document.querySelectorAll('[data-modal]'),
     modalclose = document.querySelector('[data-close]'),
@@ -157,7 +149,7 @@ let modalTrigger = document.querySelectorAll('[data-modal]'),
         }
     });
 
-    let modalTimerId = setTimeout(openModal,3000);
+    // let modalTimerId = setTimeout(openModal,3000);
 
     function showModalByScroll(){
         if(window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight){
@@ -166,7 +158,6 @@ let modalTrigger = document.querySelectorAll('[data-modal]'),
         }
     }
     window.addEventListener('scroll',showModalByScroll);
-
 
 
 });
